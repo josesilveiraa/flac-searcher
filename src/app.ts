@@ -17,7 +17,7 @@ inquirer.prompt([
   
   {
     name: "query",
-    message: "What song would you like to download?"
+    message: "Enter search query:"
   }
 
 ]).then(async ({ searchType, query }) => {

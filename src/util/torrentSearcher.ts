@@ -26,7 +26,7 @@ const torrentSearch = async (query: string, site: Site) => {
     $("table#table tbody tr").each((i, el) => {
       const children = $(el).children();
 
-      const title = $(children[0]).text();
+      const title = $(children[0]).text().replace("\t", "").trim();
       const lastUpdated = $(children[1]).text();
       const seeders = $(children[2]).text();
       const leechers = $(children[3]).text();
