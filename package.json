@@ -1,0 +1,25 @@
+{
+  "name": "flac-searcher",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/app.ts"
+  },
+  "devDependencies": {
+    "@types/atob": "^2.1.2",
+    "@types/btoa": "^1.2.3",
+    "@types/inquirer": "^8.1.1",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.4.2"
+  },
+  "dependencies": {
+    "atob": "^2.1.2",
+    "axios": "^0.21.4",
+    "btoa": "^1.2.1",
+    "chalk": "^4.1.2",
+    "cheerio": "^1.0.0-rc.10",
+    "inquirer": "^8.1.2",
+    "snoowrap": "^1.23.0"
+  }
+}
