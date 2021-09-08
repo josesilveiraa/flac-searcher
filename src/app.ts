@@ -1,7 +1,10 @@
 import inquirer from 'inquirer';
+import { config } from 'dotenv';
 
 import redditSearch from './util/redditSearcher';
 import torrentSearch, { Site } from './util/torrentSearcher';
+
+config();
 
 inquirer.prompt([
 

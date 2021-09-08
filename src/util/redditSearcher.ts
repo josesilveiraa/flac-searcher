@@ -21,9 +21,9 @@ const redditSearch = async (query: string) => {
 
   const r = new snoowrap({
     userAgent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36 Edg/93.0.961.38",
-    clientId: "eScAVV6ztqIHWaiYsyhiJQ",
-    clientSecret: "I6UUM-PHsIMwLveBJMkkgYK3sWKRzw",
-    refreshToken: "645874843348-LiokKUYh2oteTvWwKEsFH5-yYfbBIg"
+    clientId: process.env.REDDIT_CLIENT_ID,
+    clientSecret: process.env.REDDIT_CLIENT_SECRET,
+    refreshToken: process.env.REDDIT_REFRESH_TOKEN
   });
 
   const response = (await r.search({ query,  subreddit: "riprequests" })).fetchAll();
