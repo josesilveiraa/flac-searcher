@@ -19,3 +19,7 @@ $ npm install
 $ npx dev
 
 ```
+
+## Obtaining reddit credentials
+
+Use <https://not-an-aardvark.github.io/reddit-oauth-helper/>
